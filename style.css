@@ -1,0 +1,62 @@
+/* Styling in order to see boxes! */
+
+[class^=container] {
+    border: 1px solid salmon;
+}
+
+[class^=row] {
+    border: 1px solid pink;
+}
+
+[class^=col] {
+    border: 1px solid teal;
+}
+
+/* Styling common components */
+
+#my-new-btn {
+    display: inline-block;
+    background-color: rgb(0,215,210);
+    border-color: transparent;
+    color: rgb(3,27,78);
+    box-shadow: none;
+    text-transform: uppercase;
+}
+
+#my-new-btn:hover {
+    cursor: default;
+}
+
+.my-link {
+    text-decoration: none;
+}
+
+.my-link:hover {
+    text-decoration: none;
+}
+
+.my-hover-link:hover {
+    text-decoration: none;
+    color: rgb(22,117,255);
+}
+
+.my-grey-text {
+    color: rgb(91,105,135);
+    font-weight: bold;
+}
+
+/* Styling scrolling navbar */
+
+nav {
+    background-color: white;
+}
+
+nav .row:first-of-type [class^=col] {
+    height: 40px;
+    line-height: 40px;
+}
+
+nav .row:last-of-type [class^=col] {
+    height: 60px;
+    line-height: 60px;
+}
