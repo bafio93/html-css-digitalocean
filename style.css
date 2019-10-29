@@ -106,12 +106,68 @@ nav .row {
     border-bottom: 1px solid rgb(229,232,237);
 }
 
+nav .fa-bars {
+    color: rgb(129,164,255);
+    font-size: 30px;
+    line-height: 60px;
+    display: none;
+}
+
+@media screen and (max-width: 1049px) {
+
+    nav {
+        background-color: transparent;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+
+    nav .row {
+        border: transparent;
+    }
+
+    nav .my-blue-text {
+        color: white;
+    }
+
+    nav img {
+        border-radius: 50%;
+        margin-right: 10px;
+    }
+
+    nav .row:first-of-type {
+        display: none;
+    }
+
+    nav .row:last-of-type li:first-of-type {
+        display: inline-block;
+    }
+
+    nav .row:last-of-type li:not(:first-of-type), nav #my-sign-btn {
+        display: none;
+    }
+
+    nav .fa-bars {
+        display: inline-block;
+    }
+
+}
+
 /* Styling jumbo */
 
 #jumbo {
-    background: #0248ff url(https://www.digitalocean.com/assets/media/homepage/bg-home-1-d54581d7.jpg);
+    background: url(https://www.digitalocean.com/assets/media/homepage/bg-home-1-d54581d7.jpg);
     background-position: bottom;
     background-repeat: no-repeat;
     min-height: 800px;
     margin-top: 100px;
+}
+
+@media screen and (max-width: 1049px) {
+
+    #jumbo {
+        margin-top: 0;
+    }
+
 }
