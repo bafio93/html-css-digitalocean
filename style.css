@@ -1,6 +1,6 @@
 /* Styling in order to see boxes! */
 
-[class^=container] {
+/* [class^=container] {
     border: 1px solid salmon;
 }
 
@@ -10,9 +10,13 @@
 
 [class^=col] {
     border: 1px solid teal;
-}
+} */
 
 /* Styling common components */
+
+.btn {
+    border-radius: 5px;
+}
 
 #my-new-btn {
     display: inline-block;
@@ -25,6 +29,21 @@
 
 #my-new-btn:hover {
     cursor: default;
+}
+
+#my-sign-btn {
+    display: inline-block;
+    background-color: transparent;
+    border-color: rgb(0,105,255);
+    color: rgb(0,105,255);
+    box-shadow: none;
+    text-transform: uppercase;
+}
+
+#my-sign-btn:hover {
+    background-color: rgb(0,105,255);
+    border-color: rgb(0,105,255);
+    color: white;
 }
 
 .my-blue-text {
@@ -53,6 +72,10 @@
 
 nav {
     background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
 nav .row:first-of-type [class^=col] {
@@ -72,4 +95,23 @@ nav img {
 nav .row:last-of-type li:first-of-type span {
     font-size: 150%;
     font-weight: bolder;
+    margin-right: 30px;
+}
+
+nav .row:last-of-type li {
+    margin-right: 15px;
+}
+
+nav .row {
+    border-bottom: 1px solid rgb(229,232,237);
+}
+
+/* Styling jumbo */
+
+#jumbo {
+    background: #0248ff url(https://www.digitalocean.com/assets/media/homepage/bg-home-1-d54581d7.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    min-height: 800px;
+    margin-top: 100px;
 }
