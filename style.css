@@ -27,6 +27,10 @@
     cursor: default;
 }
 
+.my-blue-text {
+    color: rgb(0,105,255);
+}
+
 .my-link {
     text-decoration: none;
 }
@@ -59,4 +63,13 @@ nav .row:first-of-type [class^=col] {
 nav .row:last-of-type [class^=col] {
     height: 60px;
     line-height: 60px;
+}
+
+nav img {
+    height: 50px;
+}
+
+nav .row:last-of-type li:first-of-type span {
+    font-size: 150%;
+    font-weight: bolder;
 }
