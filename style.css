@@ -68,6 +68,23 @@
     font-weight: bold;
 }
 
+.my-grey-text:hover {
+    color: rgb(91,105,135);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.my-white-text {
+    color: white;
+    text-decoration: none;
+}
+
+.my-white-text:hover {
+    color: white;
+    text-decoration: none;
+}
+
+
 /* Styling scrolling navbar */
 
 nav {
@@ -154,6 +171,15 @@ nav .fa-bars {
 
 }
 
+@media screen and (max-width: 480px) {
+
+    #my-logo {
+        font-size: smaller;
+    }
+
+}
+
+
 /* Styling jumbo */
 
 #jumbo {
@@ -162,12 +188,32 @@ nav .fa-bars {
     background-repeat: no-repeat;
     min-height: 800px;
     margin-top: 100px;
+    padding: 40px 0;
+}
+
+#my-green-btn {
+    background-color: rgb(0,180,123);
+    padding: 10px;
+    width: 100%;
+}
+
+#my-green-btn br {
+    display: none;
 }
 
 @media screen and (max-width: 1049px) {
 
     #jumbo {
         margin-top: 0;
+        padding-top: 100px;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+
+    #my-green-btn br {
+        display: inline-block;
     }
 
 }
