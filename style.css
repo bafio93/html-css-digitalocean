@@ -144,6 +144,10 @@
     text-decoration: underline;
 }
 
+.my-no-underline-hover:hover {
+    text-decoration: none;
+}
+
 /* Styling scrolling navbar */
 
 nav {
@@ -371,4 +375,28 @@ nav .fa-bars {
     .my-row-deco-row {
         width: 15%;
     }
+}
+
+/* Styling innovative-businesses */
+
+#innovative-businesses {
+    background-color: rgb(243,245,249);
+}
+
+#innovative-businesses img {
+    height: 65px;
+}
+
+#innovative-businesses #splunk {
+    height: 35px;
+    position: relative;
+    top: 18px;
+}
+
+#innovative-businesses .row:first-of-type{
+    margin: 50px 0 25px;
+}
+
+#innovative-businesses .row:last-of-type{
+    margin: 25px 0 50px;
 }
