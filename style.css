@@ -46,8 +46,20 @@
     color: white;
 }
 
-.my-blue-text {
-    color: rgb(0,105,255);
+#my-create-btn {
+    display: inline-block;
+    width: 100%;
+    background-color: rgb(0,105,255);
+    border-color: rgb(0,105,255);
+    color: white;
+    box-shadow: none;
+    font-weight: bolder;
+}
+
+#my-create-btn:hover {
+    background-color: rgb(22,51,255);
+    border-color: rgb(22,51,255);
+    color: white;
 }
 
 .my-link {
@@ -63,6 +75,14 @@
     color: rgb(22,117,255);
 }
 
+.my-blue-text {
+    color: rgb(0,105,255);
+}
+
+.my-blue-text:hover {
+    color: rgb(0,105,255);
+}
+
 .my-grey-text {
     color: rgb(91,105,135);
     font-weight: bold;
@@ -72,6 +92,14 @@
     color: rgb(91,105,135);
     font-weight: bold;
     text-decoration: none;
+}
+
+.my-silver-text {
+    color: rgb(164,173,193);
+}
+
+.my-silver-text:hover {
+    color: rgb(164,173,193);
 }
 
 .my-white-text {
@@ -84,6 +112,37 @@
     text-decoration: none;
 }
 
+.my-dark-blue-text {
+    color: rgb(3,27,78);
+    text-decoration: none;
+}
+
+.my-dark-blue-text:hover {
+    color: rgb(3,27,78);
+    text-decoration: none;
+}
+
+.my-azure-text {
+    color: rgb(204,218,255);
+    text-decoration: none;
+}
+
+.my-azure-text:hover {
+    color: rgb(204,218,255);
+    text-decoration: none;
+}
+
+.my-float-left {
+    float: left;
+}
+
+.my-float-right {
+    float: right;
+}
+
+.my-underline {
+    text-decoration: underline;
+}
 
 /* Styling scrolling navbar */
 
@@ -93,6 +152,7 @@ nav {
     top: 0;
     left: 0;
     right: 0;
+    z-index: 100;
 }
 
 nav .row:first-of-type [class^=col] {
@@ -179,16 +239,19 @@ nav .fa-bars {
 
 }
 
-
 /* Styling jumbo */
 
 #jumbo {
     background: url(https://www.digitalocean.com/assets/media/homepage/bg-home-1-d54581d7.jpg);
     background-position: bottom;
     background-repeat: no-repeat;
-    min-height: 800px;
+    min-height: 750px;
     margin-top: 100px;
     padding: 40px 0;
+}
+
+#jumbo .row:not(:first-of-type) {
+    margin-top: 40px;
 }
 
 #my-green-btn {
@@ -201,11 +264,80 @@ nav .fa-bars {
     display: none;
 }
 
+#jumbo h1 {
+    font-size: 60px;
+    font-weight: bolder;
+}
+
+#jumbo form {
+    background-color: white;
+    border-radius: 5px;
+    padding: 15px 30px;
+}
+
+#jumbo form h2 {
+    padding: 20px 0 10px;
+}
+
+#jumbo form input {
+    margin: 15px 0;
+}
+
+#jumbo form input, #jumbo form a {
+    height: 48px;
+}
+
+#jumbo form a {
+    line-height: 35px;
+}
+
+.my-row-deco {
+    margin: 15px 0;
+}
+
+.my-row-deco * {
+    display: inline-block;
+}
+
+.my-row-deco p {
+    color: rgb(101,114,135);
+}
+
+.my-row-deco-row {
+    position: relative;
+    width: 30%;
+    border-bottom: 1px solid rgb(229,232,237);
+    bottom: 4px;
+}
+
+.my-profile-btn {
+    display: block;
+    width: 45%;
+    background-color: rgb(242,248,255);
+    border-color: rgb(194,220,255);
+    color: rgb(3,27,78);
+    box-shadow: none;
+    font-weight: bolder;
+}
+
+.my-profile-btn:hover {
+    background-color: rgb(213,228,247);
+}
+
+#jumbo small {
+    display: inline-block;
+    margin: 15px 0;
+}
+
 @media screen and (max-width: 1049px) {
 
     #jumbo {
         margin-top: 0;
         padding-top: 100px;
+    }
+
+    #jumbo .container {
+        width: 100%;
     }
 
 }
