@@ -264,9 +264,18 @@ nav .fa-bars {
     display: none;
 }
 
-#jumbo h1 {
+#jumbo #jumbo-left {
+    position: relative;
+    transform: translateY(25%);
+}
+
+#jumbo #jumbo-left h1 {
     font-size: 60px;
     font-weight: bolder;
+}
+
+#jumbo #jumbo-left h2 {
+    line-height: 1.25;
 }
 
 #jumbo form {
@@ -334,10 +343,21 @@ nav .fa-bars {
     #jumbo {
         margin-top: 0;
         padding-top: 100px;
+        background-color: rgb(2,72,255);
+        height: 100%;
     }
 
     #jumbo .container {
         width: 100%;
+    }
+
+    #jumbo #jumbo-left {
+        position: relative;
+        transform: translateY(0);
+    }
+
+    #jumbo form {
+        margin-top: 20px;
     }
 
 }
@@ -348,4 +368,7 @@ nav .fa-bars {
         display: inline-block;
     }
 
+    .my-row-deco-row {
+        width: 15%;
+    }
 }
