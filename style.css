@@ -75,6 +75,18 @@
     color: rgb(22,117,255);
 }
 
+a.my-silver-link{
+    color: rgb(164,173,193);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a.my-silver-link:hover{
+    color: rgb(91,105,135);
+    text-decoration: none;
+    font-weight: bold;
+}
+
 .my-blue-text {
     color: rgb(0,105,255);
 }
@@ -399,4 +411,54 @@ nav .fa-bars {
 
 #innovative-businesses .row:last-of-type{
     margin: 25px 0 50px;
+}
+
+/* Styling deploy */
+
+#deploy h1 {
+    margin: 100px 0 25px;
+}
+
+#deploy strong {
+    display: inline-block;
+    margin-bottom: 50px;
+}
+
+#deploy li {
+    border-left: 2px solid rgb(204,218,255);
+    padding: 15px 30px;
+}
+
+#deploy li:first-of-type {
+    border-left: 2px solid rgb(0,105,255);
+    padding: 15px 30px;
+}
+
+#deploy i {
+    font-size: 30px;
+}
+
+#deploy .deploy-cell {
+    margin-bottom: 25px;
+}
+
+@media screen and (max-width: 480px) {
+
+    #deploy .col-xs-6 {
+        width: 100vw;
+        float: left;
+    }
+
+    #deploy h1 {
+        margin: 50px 0 25px;
+    }
+
+    #deploy strong {
+        margin-bottom: 25px;
+    }
+
+    #deploy ul {
+        margin-bottom: 25px;
+    }
+
 }
