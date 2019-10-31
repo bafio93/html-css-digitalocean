@@ -632,3 +632,82 @@ nav .fa-bars {
 }
 
 /* Styling development-love */
+
+#development-love {
+    background-color: rgb(243,245,249);
+}
+
+#development-love h1 {
+    margin: 100px 0 25px;
+}
+
+#development-love #dev-luv {
+    width: calc((100% / 3) * 2);
+    border-radius: 5px;
+    box-shadow: 0 0 1px 0;
+    margin: 50px 0 25px;
+    padding: 5%;
+    background-color: white;
+    display: inline-block;
+}
+
+#development-love #dev-luv h3 {
+    line-height: 1.5;
+}
+
+#development-love #dev-luv p {
+    margin: 20px 0;
+}
+#development-love #dev-luv a {
+    font-weight: bold;
+}
+
+#development-love #dev-luv img {
+    width: 150px;
+}
+
+#development-love i.my-outer {
+    font-size: 40px;
+}
+
+#development-love i.my-outer {
+}
+
+#development-love i.fa-angle-left.my-outer {
+    transform: translate(-200%, -200%);
+}
+
+#development-love i.fa-angle-right.my-outer {
+    transform: translate(200%, -200%);
+}
+
+#development-love i.fa-angle-right.my-outer:hover {
+    color: rgb(22,117,255);
+    text-decoration: none;
+}
+
+#development-love [class^="col"]:last-of-type {
+    margin: 25px 0 100px;
+}
+
+@media screen and (max-width: 767px) {
+
+    #development-love h1 {
+        margin-top: 50px;
+    }
+
+    #development-love #dev-luv {
+        width: 100%;
+    }
+
+    #development-love i.my-outer {
+        display: none;
+    }
+
+    #development-love [class^="col"]:last-of-type {
+        margin: 25px 0 50px;
+    }
+
+}
+
+/* Styling get section */
