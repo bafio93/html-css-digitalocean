@@ -160,6 +160,27 @@ a.my-silver-link:hover{
     text-decoration: none;
 }
 
+[class^="my-circle-"] {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border: 2px solid rgb(0,105,255);
+    border-radius: 50%;
+    margin: 0 5px;
+}
+
+.my-circle-full {
+    background-color: rgb(0,105,255);
+}
+
+.my-circle-empty {
+    background-color: transparent;
+}
+
+.my-circle-empty:hover {
+    background-color: rgba(0,105,255,0.3);
+}
+
 /* Styling scrolling navbar */
 
 nav {
@@ -415,6 +436,10 @@ nav .fa-bars {
 
 /* Styling deploy */
 
+#deploy {
+    margin-bottom: 50px;
+}
+
 #deploy h1 {
     margin: 100px 0 25px;
 }
@@ -444,6 +469,10 @@ nav .fa-bars {
 
 @media screen and (max-width: 480px) {
 
+    #deploy {
+        margin-bottom: 25px;
+    }
+
     #deploy .col-xs-6 {
         width: 100vw;
         float: left;
@@ -459,6 +488,62 @@ nav .fa-bars {
 
     #deploy ul {
         margin-bottom: 25px;
+    }
+
+}
+
+/* Styling designed */
+
+#designed {
+    background-color: rgb(243,245,249);
+}
+
+#designed h1 {
+    margin: 100px 0 0;
+}
+
+#designed img {
+    width: calc((100% / 3) * 2);
+    margin: 50px 0 25px;
+}
+
+#designed i {
+    font-size: 40px;
+}
+
+#designed i.fa-angle-left {
+    transform: translateX(-200%);
+}
+
+#designed i.fa-angle-right {
+    transform: translateX(200%);
+}
+
+#designed i.my-dark-blue-text:hover {
+    color: rgb(22,117,255);
+    text-decoration: none;
+}
+
+#designed [class^="col"]:last-of-type {
+    margin: 25px 0 100px;
+}
+
+@media screen and (max-width: 767px) {
+
+    #designed h1 {
+        margin-top: 50px;
+    }
+
+    #designed img {
+        width: 100%;
+    }
+
+    #designed i {
+        display: none;
+    }
+
+    #designed [class^="col"]:last-of-type {
+        margin: 25px 0 50px;
     }
 
 }
