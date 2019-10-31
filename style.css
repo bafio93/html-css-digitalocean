@@ -578,3 +578,57 @@ nav .fa-bars {
     }
 
 }
+
+/* Styling service */
+
+.my-cyan-text {
+    color: rgb(0,215,202);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.my-cyan-text:hover {
+    color: rgb(0,95,230);
+    text-decoration: none;
+}
+
+#service {
+    background-image: radial-gradient(farthest-corner at 80% 90%, rgb(53,73,113), rgb(3,27,78));
+    padding: 80px 0;
+}
+
+#service h1 {
+    margin-bottom: 25px;
+}
+
+#service li {
+    padding: 5px 0;
+}
+
+#service li:not(:last-child) {
+    border-bottom: 1px solid rgba(204,218,255,0.5);
+}
+
+#service li.clearfix p {
+    display: inline-block;
+}
+
+#service .my-azure-text {
+    display: inline-block;
+    transform: translateX(60px);
+}
+
+@media screen and (max-width: 480px) {
+
+    #service p {
+        font-size: 80%;
+    }
+
+    #service .my-azure-text {
+        display: inline-block;
+        transform: translateX(30px);
+    }
+
+}
+
+/* Styling development-love */
