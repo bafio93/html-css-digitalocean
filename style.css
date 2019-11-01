@@ -711,3 +711,19 @@ nav .fa-bars {
 }
 
 /* Styling get section */
+
+#get {
+    background-image: url(https://www.digitalocean.com/assets/media/homepage/bg-home-1-d54581d7.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    height: 200px;
+    padding: 25px 0;
+}
+
+#get .btn {
+    margin-top: 20px;
+}
+
+#get .btn:hover {
+    background-color: rgb(204,211,241);
+}
